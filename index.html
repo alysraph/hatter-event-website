@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- head-->
-        <title>The Hatter's Hour Tea Party Event</title>
-        <link rel="icon" type="image/x-icon" href="./img/favicon.png">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    
-    <body>
-    
-        <!-- navbar
+
+<head>
+    <!-- head-->
+    <title>The Hatter's Hour Tea Party Event</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- navbar
 
         Purpose:
         Navigation bar that allows users to jump to different sections of the webpage
@@ -21,122 +22,135 @@
         - [ ] Project 8 (STRETCH FEATURE) 
         - [ ] Any time between / after
         -->
-        <div class="navbar">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#schedule">Event Schedule</a></li>
-                <li><a href="#links">Links</a></li>
-            </ul>
+    <div class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#schedule">Event Schedule</a></li>
+            <li><a href="#links">Links</a></li>
+            <li><button id="theme-button">Toggle Light Mode</button></li>
+        </ul>
+    </div>
+
+    <!-- headings-->
+
+    <div class="header-container" id="home">
+        <img id="header-img" src="./img/top_hat-removebg-preview.png" alt="header bg img" />
+        <h1 id="site-title">THE HATTER'S HOUR</h1>
+        <h2 id="tag-line">Steep in Wonder, Sip the Impossible</h2>
+
+        <div class="header-item">
+            <button class="header-button" type="button">RSVP</button>
         </div>
 
-        <!-- headings-->
-
-        <div class="header-container" id="home">
-                <img id="header-img" src="./img/top_hat-removebg-preview.png" alt="header bg img"/>
-                <h1 id="site-title">THE HATTER'S HOUR</h1>
-                <h2 id="tag-line">Steep in Wonder, Sip the Impossible</h2>
-
-                <div class="header-item">
-                    <button class="header-button" type="button">RSVP</button>
-                </div>
-        
-                <div class="header-item">
-                    <button class="header-button" type="button">Purchase Teas</button>
-                </div>           
+        <div class="header-item">
+            <button class="header-button" type="button">Purchase Teas</button>
         </div>
-        
-        <!-- about -->
-        
-        <div class="about-container" id="about">
-            <div class="about-article">
+    </div>
+
+    <!-- about -->
+
+    <div class="about-container" id="about">
+        <div class="about-article">
             <h2 class="subtitle">About the Event</h2>
             <p>
                 Step through the looking glass into a tea party that grows curiouser and curiouser by the hour!
             </p>
             <p>
                 Join us where teacups overflow with imagination and time stands perfectly still as you savor each sip.
-                Surrounded by vibrant colors and delightful madness, this is no ordinary gathering—it's a celebration where reality and fantasy steep together.
-            </p>    
+                Surrounded by vibrant colors and delightful madness, this is no ordinary gathering—it's a celebration
+                where reality and fantasy steep together.
+            </p>
             <p>Don't be late for this very important date!</p>
+        </div>
+
+        <div class="expect">
+            <h3>What to Expect</h3>
+            <h4>"A Whimsical Tea Party of Madness and Merriment!"</h4>
+            <ul>
+                <li> <b> &#10209; Curious Conversations & Nonsensical Fun &#10209; </b>
+                    <br>
+                    <i> Expect riddles, eccentric debates, and delightfully absurd chatter.</i>
+                </li>
+                <li> <b>&hearts; Madcap Festivities & Wonderland Magic &hearts;</b>
+                    <br>
+                    <i>Enjoy a vibrant setting filled with peculiar décor, unexpected surprises, and a dash of
+                        chaos.</i>
+                </li>
+                <li> <b> &spades; Delectable Treats & Bottomless Tea &spades;</b>
+                    <br>
+                    <i>Indulge in an enchanting spread of pastries, sweets, and a never-ending selection of teas.</i>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- schedule -->
+
+    <div class="event-sched" id="schedule">
+        <h2>Event Schedule</h2>
+
+        <div class="event-container">
+            <div class="event" id="vanishing-tea">
+                <img class="event-img" alt="Event image 1" src="./img/event1_img.png" />
+                <h3>The Vanishing Tea Ceremony</h3>
+                <p>Teacups suddenly change colors as you drink, revealing hidden messages at the bottom that lead guests
+                    on a scavenger hunt through the party.</p>
             </div>
 
-            <div class="expect">
-                <h3>What to Expect</h3>
-                <h4>"A Whimsical Tea Party of Madness and Merriment!"</h4>
-                <ul>
-                    <li> <b> &#10209; Curious Conversations & Nonsensical Fun &#10209; </b>
-                        <br>
-                        <i> Expect riddles, eccentric debates, and delightfully absurd chatter.</i></li>
-                    <li> <b>&hearts; Madcap Festivities & Wonderland Magic	&hearts;</b>
-                        <br>
-                        <i>Enjoy a vibrant setting filled with peculiar décor, unexpected surprises, and a dash of chaos.</i></li>
-                    <li> <b> &spades; Delectable Treats & Bottomless Tea &spades;</b>
-                        <br>
-                        <i>Indulge in an enchanting spread of pastries, sweets, and a never-ending selection of teas.</i></li>
-                </ul>
+            <div class="event" id="riddles-roses">
+                <img class="event-img" alt="Event image 2" src="/img/event2_img.png" />
+                <h3>Riddles & Roses</h3>
+                <p>The Mad Hatter challenges guests to solve impossible riddles, with winners receiving miniature "Eat
+                    Me" cakes that unlock access to a secret garden room filled with living roses that whisper
+                    compliments.</p>
             </div>
-        </div>
 
-        <!-- schedule --> 
-
-        <div class="event-sched" id="schedule">
-            <h2>Event Schedule</h2>
-
-            <div class="event-container">
-                <div class="event" id="vanishing-tea">
-                    <img class="event-img" alt="Event image 1" src="./img/event1_img.png"/>
-                    <h3>The Vanishing Tea Ceremony</h3>
-                    <p>Teacups suddenly change colors as you drink, revealing hidden messages at the bottom that lead guests on a scavenger hunt through the party.</p>
-                </div>
-
-                <div class="event" id="riddles-roses">
-                    <img class="event-img" alt="Event image 2" src="/img/event2_img.png"/>
-                    <h3>Riddles & Roses</h3>
-                    <p>The Mad Hatter challenges guests to solve impossible riddles, with winners receiving miniature "Eat Me" cakes that unlock access to a secret garden room filled with living roses that whisper compliments.</p>
-                </div>
-
-                <div class="event" id="time-stopped">
-                    <img class="event-img" id="time-stopped-img" alt="Event image 3" src="/img/event 3.png"/>
-                    <h3>The Time-Stopped Tasting</h3>
-                    <p>At precisely 6 o'clock, all clocks freeze, and servers appear with trays of teas that change flavor with each sip—from sweet to savory to impossibly delicious flavors that don't exist in the ordinary world.</p>
-                </div>
-
+            <div class="event" id="time-stopped">
+                <img class="event-img" id="time-stopped-img" alt="Event image 3" src="/img/event 3.png" />
+                <h3>The Time-Stopped Tasting</h3>
+                <p>At precisely 6 o'clock, all clocks freeze, and servers appear with trays of teas that change flavor
+                    with each sip—from sweet to savory to impossibly delicious flavors that don't exist in the ordinary
+                    world.</p>
             </div>
 
         </div>
-        <!-- rsvp [PLACEHOLDER] [ADDED IN UNIT 6] -->
-        <!-- success modal [PLACEHOLDER] [ADDED IN UNIT 9] --> 
 
-        <!-- links --> 
+    </div>
+    <!-- rsvp [PLACEHOLDER] [ADDED IN UNIT 6] -->
+    <!-- success modal [PLACEHOLDER] [ADDED IN UNIT 9] -->
 
-        <div class="links-container" id="links">
-            <h2 class="subtitle">Links</h2>
-            <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
-            <a class="links-item" href="https://www.alicesteacup.com/" target="_blank">
-                <article>
-                    <h3>Alice's Tea Cup</h3>
-                    <p>For an immersive dining experience inspired by Wonderland.</p>
-                </article>
-            </a>
-            <a class="links-item" href="https://www.adagio.com/" target="_blank">
-                <article>
-                    <h3>Adagio Teas</h3>
-                    <p>Purchase premium teas and create your own custom blends in the comfort of your own home.</p>
-                </article>
-            </a>
-        </div>
-    
-        <div class="footer" id="footer">
-            <a class="footer-link" href="https://en.wikipedia.org/wiki/Alice%27s_Adventures_in_Wonderland" target="_blank">
-                <span>Alice's Adventures in Wonderland</span>
-            </a>
-            <span>⟡</span>
-            <a class="footer-link" href="https://en.wikipedia.org/wiki/Tea_party" target="_blank">
-                <span>What is a tea party?</span>
-            </a>
-        </div>
-        <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
+    <!-- links -->
 
-    </body>
+    <div class="links-container" id="links">
+        <h2 class="subtitle">Links</h2>
+        <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
+        <a class="links-item" href="https://www.alicesteacup.com/" target="_blank">
+            <article>
+                <h3>Alice's Tea Cup</h3>
+                <p>For an immersive dining experience inspired by Wonderland.</p>
+            </article>
+        </a>
+        <a class="links-item" href="https://www.adagio.com/" target="_blank">
+            <article>
+                <h3>Adagio Teas</h3>
+                <p>Purchase premium teas and create your own custom blends in the comfort of your own home.</p>
+            </article>
+        </a>
+    </div>
+
+    <div class="footer" id="footer">
+        <a class="footer-link" href="https://en.wikipedia.org/wiki/Alice%27s_Adventures_in_Wonderland" target="_blank">
+            <span>Alice's Adventures in Wonderland</span>
+        </a>
+        <span>⟡</span>
+        <a class="footer-link" href="https://en.wikipedia.org/wiki/Tea_party" target="_blank">
+            <span>What is a tea party?</span>
+        </a>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
 </html>

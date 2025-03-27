@@ -1,33 +1,69 @@
+/*** VSCodeEDU preview fix 
+
+  Purpose:
+  - Fix VSCodeEDU issue that causes a white border to show around
+    the preview window
+
+  When To Modify:
+  - If you change the background color of your webpage, you may need to update this rule too.
+***/
+
 html {
-    background-color: var(--bg-color);
+  background-color: inherit;
 }
 
-/*** body ***/
+/*** body ***
+  
+  Purpose:
+  - Add style rules for the body of your webpage
+  - This is useful if you want a rule to apply to EVERYTHING on your page
+    - (Tip: You can always override these rules later in the stylesheet)
+
+  When To Modify:
+  - [X] Project 3 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
 
 body {
-    background-color: var(--bg-color);
-    font-size: 18px;
-    color: var(--text-color);
-    font-family: var(--article-font);
-    margin: 60px;
-    text-align: center;
-    justify-content: center;
+  /* Add a background color or image */
+  background-color: var(--bg-color);
+  /* see bottom of file for color variables */
+
+  /* Customize the default size, color, and font for text*/
+  font-size: 18px;
+  color: var(--text-color);
+  font-family: var(--article-font);
+  /* This tells the browser: "Try to use `Tahoma`, and if you can't find it, use any sans-serif font." */
+
+  /* Put space around the edges of the webpage */
+  margin: 60px;
+  text-align: center;
+  justify-content: center;
 }
 
-/*** Text ***/
+/*** Text ***
+  
+  Purpose: 
+  - Add style rules for headings (h1-6),
+    paragraphs (p), links (a), and buttons
+
+  When To Modify:
+  - [X] Project 3 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
 
 h1 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 h2 {
-    font-size: 2rem;
-    font-family: var(--subtitle-font);
+  font-size: 2rem;
+  font-family: var(--subtitle-font);
 }
 
 h3 {
-    font-size: 40px;
-    font-family: var(--subtitle-font);
+  font-size: 40px;
+  font-family: var(--subtitle-font);
 }
 
 h4 {
@@ -35,7 +71,7 @@ h4 {
 }
 
 p {
-    font-family: var(--article-font);
+  font-family: var(--article-font);
 }
 
 a {
@@ -68,18 +104,25 @@ a:visited {
 }
 
 button {
-    background-color: var(--accent-color-darkest);
-    color: var(--accent-color-medium);
-    border: none;
-    padding: 5px 12px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: var(--article-font);
-    font-size: 18px;
-    width: 180px;
-    height: 50px;  
-    font-weight: bold;
-    margin: 10px;
+  /* Example Style, replace with your own! */
+  background-color: var(--accent-color-darkest);
+  /* button color */
+  color: var(--accent-color-medium);
+  /* text color */
+  border: none;
+  /* hides the default border */
+  padding: 5px 12px;
+  /* space between button's text and edge */
+  border-radius: 5px;
+  /* curved edges instead of square */
+  cursor: pointer;
+  /* makes the cursor change when over button */
+  font-family: var(--article-font);
+  font-size: 18px;
+  width: 180px;
+  height: 50px;
+  font-weight: bold;
+  margin: 10px;
 }
 
 button:hover {
@@ -88,9 +131,19 @@ button:hover {
 }
 
 
-/*** header ***/
+/*** header ***
+  
+  Purpose:
+  - Add style rules for your website's header section
 
-.header-container { 
+  When To Modify:
+  - [X] Project 3 (REQUIRED FEATURE) 
+  - [ ] Project 4 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+.header-container {
+  /* Example A: This styles elements with class="header" */
   text-align: center;
   padding-top: 100px;
   margin-top: 60px;
@@ -136,7 +189,7 @@ button:hover {
   font-family: var(--title-font);
   font-size: 18px;
   width: 180px;
-  height: 50px;  
+  height: 50px;
   font-weight: bold;
   margin: 10px;
   color: var(--accent-color-light);
@@ -153,7 +206,7 @@ button:hover {
   margin-bottom: 5px;
   height: 80%;
   font-size: 10em;
-  color: var(--text-color-dark-mode);
+  color: var(--text-color);
   text-shadow: 10px 15px 1px var(--bg-color);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -166,9 +219,18 @@ button:hover {
   border-top: double var(--accent-color-light);
 }
 
-/*** footer ***/
+/*** footer ***
+  
+  Purpose:
+  - Add style rules for your website's footer section
 
-.footer { 
+  When To Modify:
+  - [] Project 3 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+.footer {
+  /* Example B: This styles elements with class="footer" */
   position: fixed;
   left: 0;
   bottom: 0;
@@ -185,10 +247,19 @@ button:hover {
   color: white;
 }
 
-/*** Navigation bar (navbar) ***/
+/*** Navigation bar (navbar) ***
+  
+  Purpose:
+  - Add style rules for your website's navbar
+
+  When To Modify:
+  - [X] Project 4 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
 
 .navbar ul {
-  z-index: 1000; 
+  z-index: 1000;
+  /* Ensures the navbar is on top of other elements */
   list-style-type: none;
   overflow: hidden;
   position: fixed;
@@ -213,9 +284,10 @@ button:hover {
   display: block;
   text-decoration: none;
   padding: 0 40px;
-  color:white;
+  color: white;
   transition: color 200ms, font-size 280ms;
   text-align: center;
+  align-content: center;
 }
 
 .navbar ul li a:hover {
@@ -223,8 +295,30 @@ button:hover {
   font-size: 1.2em;
 }
 
+#theme-button {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  text-transform: uppercase;
+  height: fit-content;
+  width: 250px;
+  color: var(--text-color-light-mode);
+  background: linear-gradient(to right, var(--accent-color-light) 10%, var(--accent-color-medium));
+}
 
-/*** About Section ***/
+#theme-button:hover {
+  background: linear-gradient(to right, var(--accent-color-light) 70%, var(--accent-color-medium));
+}
+
+/*** About Section ***
+  
+  Purpose:
+  - Add style rules for your website's About section
+
+  When To Modify:
+  - [X] Project 3 (OPTIONAL)
+  - [X] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
 
 .about-container {
   text-align: center;
@@ -241,6 +335,7 @@ button:hover {
   margin-bottom: 160px;
   border-radius: 4px;
 }
+
 .about-container ul li {
   margin: 0;
   list-style: none;
@@ -248,7 +343,16 @@ button:hover {
 }
 
 
-/*** Schedule Section ***/
+/*** Schedule Section ***
+  
+  Purpose:
+  - Add style rules for your website's Schedule section
+
+  When To Modify:
+  - [X] Project 3 (OPTIONAL)
+  - [X] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
 
 .event-sched {
   display: flex;
@@ -275,6 +379,7 @@ button:hover {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .event {
   display: flex;
   flex-direction: column;
@@ -306,7 +411,12 @@ button:hover {
   margin-bottom: 100px;
 }
 
-/*** Links Section ***/
+/*** Links Section ***
+  When To Modify:
+  - [X] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
 
 .links-container {
   background-color: var(--accent-color-medium);
@@ -347,35 +457,84 @@ button:hover {
 /*** RSVP [PLACEHOLDER] [ADDED IN UNIT 6] ***/
 /*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
 /*** Success Modal [PLACEHOLDER] [ADDED IN UNIT 9] ***/
-/*** Dark Mode [PLACEHOLDER] [ADDED IN UNIT 5] ***/
 
-/*** Custom Colors ***/
 
-:root {
-    /* Light Mode */
-    --bg-color: #701A18;
-    --text-color: #e9e9e9;
-
-    /* Dark Mode */
-    --bg-color-dark-mode: #262019;
-    --text-color-dark-mode: #fff;
-
-    /* Accent Colors */
-    --accent-color-light: #C9856F;
-    --accent-color-medium: #b45a5a;
-    --accent-color-dark: #450A0A;
-    --accent-color-darkest: #231942;
-    --accent-color-green: #465045;
-    --accent-color-light-green: #8A8773;
-
-    /* Error Colors */
-    --error-color: #f8bbd0;
-    --error-color-border: #e63946;
-
-    /* Font Styles */
-    --title-font: 'Franklin Gothic Medium', sans-serif;
-    --subtitle-font: 'Arial', sans-serif;
-    --article-font: 'Arial Narrow', sans-serif;
-    
+/* Default light mode style */
+.light-mode {
+  background-color: var(--bg-color-light-mode);
+  color: var(--text-color-light-mode);
 }
 
+/* Example: Different dark mode style for h1 */
+.light-mode h1 {
+  color: var(--text-color-light-mode);
+}
+
+.light-mode .header-container {
+  background-color: var(--accent-color-light-green);
+  color: var(--text-color-light-mode);
+  box-shadow: 10px 10px 2px var(--accent-color-medium);
+}
+
+.light-mode .event {
+  background-color: var(--accent-color-light-green);
+  box-shadow: 10px 10px 4px var(--accent-color-medium);
+}
+
+.light-mode #tag-line {
+  color: var(--accent-color-green);
+}
+
+.light-mode .about-article {
+  background-color: var(--accent-color-light);
+  box-shadow: 10px 10px 2px var(--accent-color-medium);
+}
+
+.light-mode .links-container {
+  background-color: var(--accent-color-light);
+  box-shadow: 10px 10px 4px var(--accent-color-medium);
+}
+
+/* Example: Different dark mode style for visited links */
+.light-mode a:visited * {
+  color: #450A0A;
+}
+
+/*** Custom Colors (OPTIONAL) ***
+  
+  Purpose:
+  - Use CSS variables to define custom colors for your website
+  - To get you started, we've provided the color scheme used in our example site.
+  - To reference a color variable in your css, use var(--variable-name) in place of a color value
+
+  When To Modify:
+  - [ ] Any time (OPTIONAL)
+***/
+
+:root {
+  /* Dark Mode */
+  --bg-color: #701A18;
+  --text-color: #e9e9e9;
+
+  /* Light Mode */
+  --bg-color-light-mode: #ffd8d8;
+  --text-color-light-mode: #364933;
+
+  /* Accent Colors */
+  --accent-color-light: #f1baa7;
+  --accent-color-medium: #b45a5a;
+  --accent-color-dark: #450A0A;
+  --accent-color-darkest: #231942;
+  --accent-color-green: #465045;
+  --accent-color-light-green: #96a183;
+
+  /* Error Colors */
+  --error-color: #f8bbd0;
+  --error-color-border: #e63946;
+
+  /* Font Styles */
+  --title-font: 'Franklin Gothic Medium', sans-serif;
+  --subtitle-font: 'Arial', sans-serif;
+  --article-font: 'Arial Narrow', sans-serif;
+
+}
