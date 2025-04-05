@@ -99,7 +99,7 @@
             </div>
 
             <div class="event" id="riddles-roses">
-                <img class="event-img" alt="Event image 2" src="/img/event2_img.png" />
+                <img class="event-img" alt="Event image 2" src="./img/event2_img.png" />
                 <h3>Riddles & Roses</h3>
                 <p>The Mad Hatter challenges guests to solve impossible riddles, with winners receiving miniature "Eat
                     Me" cakes that unlock access to a secret garden room filled with living roses that whisper
@@ -107,7 +107,7 @@
             </div>
 
             <div class="event" id="time-stopped">
-                <img class="event-img" id="time-stopped-img" alt="Event image 3" src="/img/event 3.png" />
+                <img class="event-img" id="time-stopped-img" alt="Event image 3" src="./img/event 3.png" />
                 <h3>The Time-Stopped Tasting</h3>
                 <p>At precisely 6 o'clock, all clocks freeze, and servers appear with trays of teas that change flavor
                     with each sip—from sweet to savory to impossibly delicious flavors that don't exist in the ordinary
@@ -117,7 +117,50 @@
         </div>
 
     </div>
-    <!-- rsvp [PLACEHOLDER] [ADDED IN UNIT 6] -->
+    <!-- rsvp
+    Purpose:
+    - Section for users to sign up for the event
+    - Contains a form for users to input their information, 
+    and a list of other users who have signed up
+
+    When To Modify:
+    - [X] Project 6 (REQUIRED FEATURE) 
+    - [ ] Project 6 (STRETCH FEATURE) 
+    - [ ] Any time after
+    -->
+    <div id="rsvp">
+        <h2>RSVP</h2>
+        <div class="rsvp-container">
+            <div class="rsvp-para">
+                Join us for a whimsical afternoon at the Hatter's Hour,
+                where the tea flows as freely as the fun! Don your most outrageous hat and step into a world of quirky
+                delights, delectable treats, and unforgettable moments. RSVP now to secure your spot at the most
+                fantastical tea party of the year!
+            </div>
+            <div class="rsvp-participants">
+                <p>🎟️ DJ from Texas has RSVP'd.</p>
+                <p>🎟️ Amy from New York has RSVP'd.</p>
+                <p>🎟️ Teresa from Montana has RSVP'd.</p>
+            </div>
+        </div>
+
+        <!--- Sign RSVP Form --->
+        <div class="form-container">
+            <form id="rsvp-form" title="rsvp-form">
+                <label for="name">Name:</label>
+                <input id="name" type="text">
+
+                <label for="address">Address:</label>
+                <input id="address" type="text">
+
+                <label for="email">Email:</label>
+                <input id="email" type="email">
+            </form>
+            <!-- Submit button -->
+            <button id="rsvp-button">Submit RSVP</button>
+        </div>
+    </div>
+
     <!-- success modal [PLACEHOLDER] [ADDED IN UNIT 9] -->
 
     <!-- links -->
